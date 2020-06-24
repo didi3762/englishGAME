@@ -10,6 +10,7 @@ export class MainboardComponent implements OnInit {
   word:string = ''
   wordEngM:string = ''
   resTexM:string = 'sss'
+  sum:number = 0
 
   constructor() { }
 
@@ -27,18 +28,23 @@ export class MainboardComponent implements OnInit {
   ]
 
   addRand(event){
+    let HebIndex = this.HebWords.indexOf(this.word)
+    let engIndex = this.englishWords.indexOf(this.wordEngM)
+    if(HebIndex == engIndex){
+        this.sum++
+    }else{
+      this.sum--
+    }
+    console.log(event,this.wordsArr,this.wordEngM , this.word, HebIndex ,engIndex);
     this.wordEngM = this.englishWords[event[0]]
     this.wordsArr[0] = this.HebWords[event[1]];
     this.wordsArr[1] = this.HebWords[event[2]];
     this.wordsArr[2] = this.HebWords[event[3]];
     this.wordsArr[3] = this.HebWords[event[4]];
     this.wordsArr[event[5]] = this.HebWords[event[0]]
-    this.resTexM = event[6].toString()
+    this.resTexM = this.sum.toString()
   
-    console.log(event,this.wordsArr);
-    
- 
-    
+   
   }
 
 

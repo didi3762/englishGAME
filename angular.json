@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "memoriGame"
+    }
+  },
+  "defaultProject": "memoriGame",
+  "cli": {
+    "analytics": false
+  }
 }
