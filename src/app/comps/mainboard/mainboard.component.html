@@ -1,0 +1,7 @@
+<div class="home">
+    <header Random [arrLange]='englishWords.length' (getRand)="addRand($event)"  [wordEng]="wordEngM" ></header>
+    <div class="board">
+        <board  *ngFor='let x of wordsArr' [wordHeb]='x' ></board>
+    </div>
+    <result></result>
+</div>

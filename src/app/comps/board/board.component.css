@@ -1,0 +1,15 @@
+#design {
+    position: relative; width: 150px; height: 150px;
+    margin: auto; margin-top: 100px; 
+    text-align: center;   
+}
+
+#rotatedBorder {
+    position: absolute; 
+    height: 100%; 
+    width: 100%;
+    box-sizing: border-box; 
+    border: 15px violet solid;
+    /* transform: rotate(45deg); */
+    box-shadow: 0 0 10px #eb311f, inset 0 0 20px #eb311f;
+}
