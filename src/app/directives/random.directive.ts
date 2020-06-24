@@ -6,21 +6,27 @@ import { Directive, ElementRef, HostListener, Output, EventEmitter, Input, OnIni
 export class RandomDirective implements OnInit {
 
   el:HTMLElement;
+  sum:number = 0;
   @Input() arrLange:number
+  @Output() getRandInit = new EventEmitter<number[]>()
   @Output() getRand = new EventEmitter<number[]>()
   @HostListener('click')    rnd() {
     console.log('clicked');
-      let rand = Math.floor(Math.random() * Math.floor(this.arrLange));
+    for (let i = 0; i < 5; i++){
+      this.rand(i)
+    }
+      this.sum++;
+      this.randArr[6] = this.sum
        this.getRand.emit(this.randArr);
   }
 
-  randArr:number[] = [1,2,3,4,5,6,7,8,9,10]
+  randArr:number[] = [1,2,3,4,5,6,7]
 
   rand(num:number){
     let rand = Math.floor(Math.random() * Math.floor(this.arrLange));
     let rand4 = Math.floor(Math.random() * Math.floor(4));
     this.randArr[num]= rand;
-    this.randArr[num+5] = rand4;
+    this.randArr[5] = rand4;
     
   }
 
@@ -35,7 +41,7 @@ export class RandomDirective implements OnInit {
       this.rand(i)
     }
     
-    this.getRand.emit(this.randArr)
+    this.getRandInit.emit(this.randArr)
    
   }
 

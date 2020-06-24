@@ -1,6 +1,7 @@
 #design {
     position: relative; width: 80px; height: 80px;
-    margin: auto; margin-top: 100px;    
+    margin: auto; margin-top: 100px; 
+    text-align: center;   
 }
 
 #rotatedBorder {
@@ -11,4 +12,12 @@
     border: 5px goldenrod solid;
     border-radius: 50px;
     box-shadow: 0 0 10px #ebe81f, inset 0 0 20px #ebe81f;
+    display: flex;
+}
+
+#sum{
+    margin: auto;
+    font-size: 30px;
+    font-weight: bold;
+    color: brown;
 }

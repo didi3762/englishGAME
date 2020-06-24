@@ -9,6 +9,7 @@ export class MainboardComponent implements OnInit {
 
   word:string = ''
   wordEngM:string = ''
+  resTexM:string = 'sss'
 
   constructor() { }
 
@@ -32,6 +33,7 @@ export class MainboardComponent implements OnInit {
     this.wordsArr[2] = this.HebWords[event[3]];
     this.wordsArr[3] = this.HebWords[event[4]];
     this.wordsArr[event[5]] = this.HebWords[event[0]]
+    this.resTexM = event[6].toString()
   
     console.log(event,this.wordsArr);
     

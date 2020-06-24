@@ -18,4 +18,6 @@ export class HeaderComponent implements OnInit {
     "אדום", "פרח","שמש","ירח","שבוע","צבע","שמיים","יין","לחם","יום"
   ]
 
+ 
+
 }
