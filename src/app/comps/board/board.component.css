@@ -12,4 +12,12 @@
     border: 15px violet solid;
     /* transform: rotate(45deg); */
     box-shadow: 0 0 10px #eb311f, inset 0 0 20px #eb311f;
+    display: flex;
+}
+
+#word{
+    margin: auto;
+    font-size: 30px;
+    font-weight: bold;
+    color: brown;
 }

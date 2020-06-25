@@ -30,7 +30,10 @@ export class MainboardComponent implements OnInit {
   addRand(event){
     let HebIndex = this.HebWords.indexOf(this.word)
     let engIndex = this.englishWords.indexOf(this.wordEngM)
-    if(HebIndex == engIndex){
+    if(this.wordEngM==''){
+      this.sum = 0
+    }
+    else if(HebIndex == engIndex){
         this.sum++
     }else{
       this.sum--
