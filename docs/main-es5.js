@@ -70,7 +70,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var AppComponent = function AppComponent() {
       _classCallCheck(this, AppComponent);
 
-      this.title = 'memoriGame';
+      this.title = 'englishGame';
     };
 
     AppComponent.ɵfac = function AppComponent_Factory(t) {
@@ -140,37 +140,43 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var _app_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/common/http */
+    "../node_modules/@angular/common/__ivy_ngcc__/fesm2015/http.js");
+    /* harmony import */
+
+
+    var _app_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
     /*! ./app.component */
     "./src/app/app.component.ts");
     /* harmony import */
 
 
-    var _comps_result_result_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    var _comps_result_result_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
     /*! ./comps/result/result.component */
     "./src/app/comps/result/result.component.ts");
     /* harmony import */
 
 
-    var _comps_board_board_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    var _comps_board_board_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
     /*! ./comps/board/board.component */
     "./src/app/comps/board/board.component.ts");
     /* harmony import */
 
 
-    var _comps_mainboard_mainboard_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    var _comps_mainboard_mainboard_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
     /*! ./comps/mainboard/mainboard.component */
     "./src/app/comps/mainboard/mainboard.component.ts");
     /* harmony import */
 
 
-    var _comps_header_header_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    var _comps_header_header_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
     /*! ./comps/header/header.component */
     "./src/app/comps/header/header.component.ts");
     /* harmony import */
 
 
-    var _directives_random_directive__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+    var _directives_random_directive__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
     /*! ./directives/random.directive */
     "./src/app/directives/random.directive.ts");
 
@@ -180,20 +186,20 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     AppModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineNgModule"]({
       type: AppModule,
-      bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"]]
+      bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]]
     });
     AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector"]({
       factory: function AppModule_Factory(t) {
         return new (t || AppModule)();
       },
       providers: [],
-      imports: [[_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"]]]
+      imports: [[_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClientModule"]]]
     });
 
     (function () {
       (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](AppModule, {
-        declarations: [_app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"], _comps_result_result_component__WEBPACK_IMPORTED_MODULE_3__["ResultComponent"], _comps_board_board_component__WEBPACK_IMPORTED_MODULE_4__["BoardComponent"], _comps_mainboard_mainboard_component__WEBPACK_IMPORTED_MODULE_5__["MainboardComponent"], _comps_header_header_component__WEBPACK_IMPORTED_MODULE_6__["HeaderComponent"], _directives_random_directive__WEBPACK_IMPORTED_MODULE_7__["RandomDirective"]],
-        imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"]]
+        declarations: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"], _comps_result_result_component__WEBPACK_IMPORTED_MODULE_4__["ResultComponent"], _comps_board_board_component__WEBPACK_IMPORTED_MODULE_5__["BoardComponent"], _comps_mainboard_mainboard_component__WEBPACK_IMPORTED_MODULE_6__["MainboardComponent"], _comps_header_header_component__WEBPACK_IMPORTED_MODULE_7__["HeaderComponent"], _directives_random_directive__WEBPACK_IMPORTED_MODULE_8__["RandomDirective"]],
+        imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClientModule"]]
       });
     })();
     /*@__PURE__*/
@@ -203,10 +209,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](AppModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"],
         args: [{
-          declarations: [_app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"], _comps_result_result_component__WEBPACK_IMPORTED_MODULE_3__["ResultComponent"], _comps_board_board_component__WEBPACK_IMPORTED_MODULE_4__["BoardComponent"], _comps_mainboard_mainboard_component__WEBPACK_IMPORTED_MODULE_5__["MainboardComponent"], _comps_header_header_component__WEBPACK_IMPORTED_MODULE_6__["HeaderComponent"], _directives_random_directive__WEBPACK_IMPORTED_MODULE_7__["RandomDirective"]],
-          imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"]],
+          declarations: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"], _comps_result_result_component__WEBPACK_IMPORTED_MODULE_4__["ResultComponent"], _comps_board_board_component__WEBPACK_IMPORTED_MODULE_5__["BoardComponent"], _comps_mainboard_mainboard_component__WEBPACK_IMPORTED_MODULE_6__["MainboardComponent"], _comps_header_header_component__WEBPACK_IMPORTED_MODULE_7__["HeaderComponent"], _directives_random_directive__WEBPACK_IMPORTED_MODULE_8__["RandomDirective"]],
+          imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClientModule"]],
           providers: [],
-          bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"]]
+          bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]]
         }]
       }], null, null);
     })();
@@ -239,14 +245,20 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
     /*! @angular/core */
     "../node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+    /* harmony import */
+
+
+    var src_app_services_my_dbservice_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! src/app/services/my-dbservice.service */
+    "./src/app/services/my-dbservice.service.ts");
 
     var BoardComponent = /*#__PURE__*/function () {
-      function BoardComponent() {
+      function BoardComponent(wordsSVC) {
         _classCallCheck(this, BoardComponent);
 
+        this.wordsSVC = wordsSVC;
         this.wordHeb = '';
         this.wordRand = '';
-        this.englishWords = ['red', 'day', 'sky', 'week', 'flower', 'sun', 'moon', 'bread', 'color', 'wine'];
       }
 
       _createClass(BoardComponent, [{
@@ -258,7 +270,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     }();
 
     BoardComponent.ɵfac = function BoardComponent_Factory(t) {
-      return new (t || BoardComponent)();
+      return new (t || BoardComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_services_my_dbservice_service__WEBPACK_IMPORTED_MODULE_1__["MyDBserviceService"]));
     };
 
     BoardComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
@@ -271,14 +283,14 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       },
       decls: 4,
       vars: 1,
-      consts: [["id", "design"], ["id", "rotatedBorder"]],
+      consts: [["id", "design"], ["id", "rotatedBorder"], ["id", "word"]],
       template: function BoardComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "span");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "span", 2);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3);
 
@@ -295,7 +307,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx.wordHeb);
         }
       },
-      styles: ["#design[_ngcontent-%COMP%] {\r\n    position: relative; width: 150px; height: 150px;\r\n    margin: auto; margin-top: 100px; \r\n    text-align: center;   \r\n}\r\n\r\n#rotatedBorder[_ngcontent-%COMP%] {\r\n    position: absolute; \r\n    height: 100%; \r\n    width: 100%;\r\n    box-sizing: border-box; \r\n    border: 15px violet solid;\r\n    \r\n    box-shadow: 0 0 10px #eb311f, inset 0 0 20px #eb311f;\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcHMvYm9hcmQvYm9hcmQuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGtCQUFrQixFQUFFLFlBQVksRUFBRSxhQUFhO0lBQy9DLFlBQVksRUFBRSxpQkFBaUI7SUFDL0Isa0JBQWtCO0FBQ3RCOztBQUVBO0lBQ0ksa0JBQWtCO0lBQ2xCLFlBQVk7SUFDWixXQUFXO0lBQ1gsc0JBQXNCO0lBQ3RCLHlCQUF5QjtJQUN6Qiw4QkFBOEI7SUFDOUIsb0RBQW9EO0FBQ3hEIiwiZmlsZSI6InNyYy9hcHAvY29tcHMvYm9hcmQvYm9hcmQuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIiNkZXNpZ24ge1xyXG4gICAgcG9zaXRpb246IHJlbGF0aXZlOyB3aWR0aDogMTUwcHg7IGhlaWdodDogMTUwcHg7XHJcbiAgICBtYXJnaW46IGF1dG87IG1hcmdpbi10b3A6IDEwMHB4OyBcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjsgICBcclxufVxyXG5cclxuI3JvdGF0ZWRCb3JkZXIge1xyXG4gICAgcG9zaXRpb246IGFic29sdXRlOyBcclxuICAgIGhlaWdodDogMTAwJTsgXHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIGJveC1zaXppbmc6IGJvcmRlci1ib3g7IFxyXG4gICAgYm9yZGVyOiAxNXB4IHZpb2xldCBzb2xpZDtcclxuICAgIC8qIHRyYW5zZm9ybTogcm90YXRlKDQ1ZGVnKTsgKi9cclxuICAgIGJveC1zaGFkb3c6IDAgMCAxMHB4ICNlYjMxMWYsIGluc2V0IDAgMCAyMHB4ICNlYjMxMWY7XHJcbn0iXX0= */"]
+      styles: ["#design[_ngcontent-%COMP%] {\r\n    position: relative; width: 150px; height: 150px;\r\n    margin: auto; margin-top: 100px; \r\n    text-align: center;   \r\n}\r\n\r\n#rotatedBorder[_ngcontent-%COMP%] {\r\n    position: absolute; \r\n    height: 100%; \r\n    width: 100%;\r\n    box-sizing: border-box; \r\n    border: 15px violet solid;\r\n    \r\n    box-shadow: 0 0 10px #eb311f, inset 0 0 20px #eb311f;\r\n    display: flex;\r\n}\r\n\r\n#word[_ngcontent-%COMP%]{\r\n    margin: auto;\r\n    font-size: 30px;\r\n    font-weight: bold;\r\n    color: brown;\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcHMvYm9hcmQvYm9hcmQuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGtCQUFrQixFQUFFLFlBQVksRUFBRSxhQUFhO0lBQy9DLFlBQVksRUFBRSxpQkFBaUI7SUFDL0Isa0JBQWtCO0FBQ3RCOztBQUVBO0lBQ0ksa0JBQWtCO0lBQ2xCLFlBQVk7SUFDWixXQUFXO0lBQ1gsc0JBQXNCO0lBQ3RCLHlCQUF5QjtJQUN6Qiw4QkFBOEI7SUFDOUIsb0RBQW9EO0lBQ3BELGFBQWE7QUFDakI7O0FBRUE7SUFDSSxZQUFZO0lBQ1osZUFBZTtJQUNmLGlCQUFpQjtJQUNqQixZQUFZO0FBQ2hCIiwiZmlsZSI6InNyYy9hcHAvY29tcHMvYm9hcmQvYm9hcmQuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIiNkZXNpZ24ge1xyXG4gICAgcG9zaXRpb246IHJlbGF0aXZlOyB3aWR0aDogMTUwcHg7IGhlaWdodDogMTUwcHg7XHJcbiAgICBtYXJnaW46IGF1dG87IG1hcmdpbi10b3A6IDEwMHB4OyBcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjsgICBcclxufVxyXG5cclxuI3JvdGF0ZWRCb3JkZXIge1xyXG4gICAgcG9zaXRpb246IGFic29sdXRlOyBcclxuICAgIGhlaWdodDogMTAwJTsgXHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIGJveC1zaXppbmc6IGJvcmRlci1ib3g7IFxyXG4gICAgYm9yZGVyOiAxNXB4IHZpb2xldCBzb2xpZDtcclxuICAgIC8qIHRyYW5zZm9ybTogcm90YXRlKDQ1ZGVnKTsgKi9cclxuICAgIGJveC1zaGFkb3c6IDAgMCAxMHB4ICNlYjMxMWYsIGluc2V0IDAgMCAyMHB4ICNlYjMxMWY7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG59XHJcblxyXG4jd29yZHtcclxuICAgIG1hcmdpbjogYXV0bztcclxuICAgIGZvbnQtc2l6ZTogMzBweDtcclxuICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xyXG4gICAgY29sb3I6IGJyb3duO1xyXG59Il19 */"]
     });
     /*@__PURE__*/
 
@@ -308,7 +320,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           styleUrls: ['./board.component.css']
         }]
       }], function () {
-        return [];
+        return [{
+          type: src_app_services_my_dbservice_service__WEBPACK_IMPORTED_MODULE_1__["MyDBserviceService"]
+        }];
       }, {
         wordHeb: [{
           type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
@@ -350,13 +364,19 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
     /*! @angular/core */
     "../node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+    /* harmony import */
+
+
+    var src_app_services_my_dbservice_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! src/app/services/my-dbservice.service */
+    "./src/app/services/my-dbservice.service.ts");
 
     var HeaderComponent = /*#__PURE__*/function () {
-      function HeaderComponent() {
+      function HeaderComponent(wordsSV) {
         _classCallCheck(this, HeaderComponent);
 
-        this.wordEng = "ssss";
-        this.wordsArr = ["אדום", "פרח", "שמש", "ירח", "שבוע", "צבע", "שמיים", "יין", "לחם", "יום"];
+        this.wordsSV = wordsSV;
+        this.wordEng = "";
       }
 
       _createClass(HeaderComponent, [{
@@ -368,7 +388,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     }();
 
     HeaderComponent.ɵfac = function HeaderComponent_Factory(t) {
-      return new (t || HeaderComponent)();
+      return new (t || HeaderComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_services_my_dbservice_service__WEBPACK_IMPORTED_MODULE_1__["MyDBserviceService"]));
     };
 
     HeaderComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
@@ -379,14 +399,14 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       },
       decls: 4,
       vars: 1,
-      consts: [["id", "design"], ["id", "rotatedBorder"]],
+      consts: [["id", "design"], ["id", "rotatedBorder", "wordEng", "wordsSV.wordHeb"], ["id", "header"]],
       template: function HeaderComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "span");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "span", 2);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3);
 
@@ -403,7 +423,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx.wordEng);
         }
       },
-      styles: ["#design[_ngcontent-%COMP%] {\r\n    position: relative; width: 300px; height: 50px;\r\n    margin: auto; margin-top: 100px;    \r\n}\r\n\r\n#rotatedBorder[_ngcontent-%COMP%] {\r\n    position: absolute; \r\n    height: 100%; \r\n    width: 100%;\r\n    box-sizing: border-box; \r\n    border: 5px gray solid;\r\n    box-shadow: 0 0 10px #eb311f, inset 0 0 20px #eb311f;\r\n    text-align: center;\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcHMvaGVhZGVyL2hlYWRlci5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksa0JBQWtCLEVBQUUsWUFBWSxFQUFFLFlBQVk7SUFDOUMsWUFBWSxFQUFFLGlCQUFpQjtBQUNuQzs7QUFFQTtJQUNJLGtCQUFrQjtJQUNsQixZQUFZO0lBQ1osV0FBVztJQUNYLHNCQUFzQjtJQUN0QixzQkFBc0I7SUFDdEIsb0RBQW9EO0lBQ3BELGtCQUFrQjtBQUN0QiIsImZpbGUiOiJzcmMvYXBwL2NvbXBzL2hlYWRlci9oZWFkZXIuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIiNkZXNpZ24ge1xyXG4gICAgcG9zaXRpb246IHJlbGF0aXZlOyB3aWR0aDogMzAwcHg7IGhlaWdodDogNTBweDtcclxuICAgIG1hcmdpbjogYXV0bzsgbWFyZ2luLXRvcDogMTAwcHg7ICAgIFxyXG59XHJcblxyXG4jcm90YXRlZEJvcmRlciB7XHJcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7IFxyXG4gICAgaGVpZ2h0OiAxMDAlOyBcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgYm94LXNpemluZzogYm9yZGVyLWJveDsgXHJcbiAgICBib3JkZXI6IDVweCBncmF5IHNvbGlkO1xyXG4gICAgYm94LXNoYWRvdzogMCAwIDEwcHggI2ViMzExZiwgaW5zZXQgMCAwIDIwcHggI2ViMzExZjtcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxufSJdfQ== */"]
+      styles: ["#design[_ngcontent-%COMP%] {\r\n    position: relative; width: 300px; height: 50px;\r\n    margin: auto; margin-top: 100px;    \r\n}\r\n\r\n#rotatedBorder[_ngcontent-%COMP%] {\r\n    position: absolute; \r\n    height: 100%; \r\n    width: 100%;\r\n    box-sizing: border-box; \r\n    border: 5px gray solid;\r\n    box-shadow: 0 0 10px #eb311f, inset 0 0 20px #eb311f;\r\n    text-align: center;\r\n}\r\n\r\n#header[_ngcontent-%COMP%]{\r\n    margin: auto;\r\n    font-size: 30px;\r\n    font-weight: bold;\r\n    color: brown;\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcHMvaGVhZGVyL2hlYWRlci5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksa0JBQWtCLEVBQUUsWUFBWSxFQUFFLFlBQVk7SUFDOUMsWUFBWSxFQUFFLGlCQUFpQjtBQUNuQzs7QUFFQTtJQUNJLGtCQUFrQjtJQUNsQixZQUFZO0lBQ1osV0FBVztJQUNYLHNCQUFzQjtJQUN0QixzQkFBc0I7SUFDdEIsb0RBQW9EO0lBQ3BELGtCQUFrQjtBQUN0Qjs7QUFFQTtJQUNJLFlBQVk7SUFDWixlQUFlO0lBQ2YsaUJBQWlCO0lBQ2pCLFlBQVk7QUFDaEIiLCJmaWxlIjoic3JjL2FwcC9jb21wcy9oZWFkZXIvaGVhZGVyLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIjZGVzaWduIHtcclxuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTsgd2lkdGg6IDMwMHB4OyBoZWlnaHQ6IDUwcHg7XHJcbiAgICBtYXJnaW46IGF1dG87IG1hcmdpbi10b3A6IDEwMHB4OyAgICBcclxufVxyXG5cclxuI3JvdGF0ZWRCb3JkZXIge1xyXG4gICAgcG9zaXRpb246IGFic29sdXRlOyBcclxuICAgIGhlaWdodDogMTAwJTsgXHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIGJveC1zaXppbmc6IGJvcmRlci1ib3g7IFxyXG4gICAgYm9yZGVyOiA1cHggZ3JheSBzb2xpZDtcclxuICAgIGJveC1zaGFkb3c6IDAgMCAxMHB4ICNlYjMxMWYsIGluc2V0IDAgMCAyMHB4ICNlYjMxMWY7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbn1cclxuXHJcbiNoZWFkZXJ7XHJcbiAgICBtYXJnaW46IGF1dG87XHJcbiAgICBmb250LXNpemU6IDMwcHg7XHJcbiAgICBmb250LXdlaWdodDogYm9sZDtcclxuICAgIGNvbG9yOiBicm93bjtcclxufSJdfQ== */"]
     });
     /*@__PURE__*/
 
@@ -416,7 +436,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           styleUrls: ['./header.component.css']
         }]
       }], function () {
-        return [];
+        return [{
+          type: src_app_services_my_dbservice_service__WEBPACK_IMPORTED_MODULE_1__["MyDBserviceService"]
+        }];
       }, {
         wordEng: [{
           type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
@@ -509,9 +531,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       if (rf & 2) {
         var x_r1 = ctx.$implicit;
 
-        var ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
-
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("arrLange", ctx_r0.englishWords.length)("wordHeb", x_r1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("wordHeb", x_r1);
       }
     }
 
@@ -521,11 +541,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
         this.word = '';
         this.wordEngM = '';
-        this.resTexM = 'sss';
+        this.resTexM = '0';
         this.sum = 0;
+        this.HebWords = [];
+        this.englishWords = [];
+        this.rand = [];
         this.wordsArr = ['', '', '', ''];
-        this.HebWords = ["אדום", "יום", "שמיים", "שבוע", "פרח", "שמש", "ירח", "לחם", "צבע", "יין"];
-        this.englishWords = ['red', 'day', 'sky', 'week', 'flower', 'sun', 'moon', 'bread', 'color', 'wine'];
       }
 
       _createClass(MainboardComponent, [{
@@ -537,13 +558,17 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           var HebIndex = this.HebWords.indexOf(this.word);
           var engIndex = this.englishWords.indexOf(this.wordEngM);
 
-          if (HebIndex == engIndex) {
+          if (this.wordEngM == '' || this.wordEngM == null) {
+            console.log(this.sum);
+            this.sum = 0;
+          } else if (HebIndex == engIndex) {
             this.sum++;
+            console.log(this.sum);
           } else {
+            console.log(this.sum);
             this.sum--;
           }
 
-          console.log(event, this.wordsArr, this.wordEngM, this.word, HebIndex, engIndex);
           this.wordEngM = this.englishWords[event[0]];
           this.wordsArr[0] = this.HebWords[event[1]];
           this.wordsArr[1] = this.HebWords[event[2]];
@@ -564,18 +589,23 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     MainboardComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
       type: MainboardComponent,
       selectors: [["mainboard"]],
+      inputs: {
+        rand: "rand"
+      },
       decls: 5,
-      vars: 4,
-      consts: [[1, "home"], ["Random", "", 3, "arrLange", "wordEng", "getRandInit", "getRand"], [1, "board"], ["Random", "", 3, "arrLange", "wordHeb", "getRand", "getWord", 4, "ngFor", "ngForOf"], ["Random", "", 3, "resTex"], ["Random", "", 3, "arrLange", "wordHeb", "getRand", "getWord"]],
+      vars: 3,
+      consts: [[1, "home"], ["Random", "", 3, "wordEng", "getenglishWords", "getHebWords", "getRandInit"], [1, "board"], ["Random", "", 3, "wordHeb", "getRand", "getWord", 4, "ngFor", "ngForOf"], ["Random", "", 3, "resTex"], ["Random", "", 3, "wordHeb", "getRand", "getWord"]],
       template: function MainboardComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "header", 1);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("getRandInit", function MainboardComponent_Template_header_getRandInit_1_listener($event) {
-            return ctx.addRand($event);
-          })("getRand", function MainboardComponent_Template_header_getRand_1_listener($event) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("getenglishWords", function MainboardComponent_Template_header_getenglishWords_1_listener($event) {
+            return ctx.englishWords = $event;
+          })("getHebWords", function MainboardComponent_Template_header_getHebWords_1_listener($event) {
+            return ctx.HebWords = $event;
+          })("getRandInit", function MainboardComponent_Template_header_getRandInit_1_listener($event) {
             return ctx.addRand($event);
           });
 
@@ -583,7 +613,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 2);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](3, MainboardComponent_board_3_Template, 1, 2, "board", 3);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](3, MainboardComponent_board_3_Template, 1, 1, "board", 3);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -595,7 +625,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         if (rf & 2) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("arrLange", ctx.englishWords.length)("wordEng", ctx.wordEngM);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("wordEng", ctx.wordEngM);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
@@ -621,7 +651,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         }]
       }], function () {
         return [];
-      }, null);
+      }, {
+        rand: [{
+          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }]
+      });
     })();
     /***/
 
@@ -751,14 +785,25 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
     /*! @angular/core */
     "../node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _services_my_dbservice_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! ../services/my-dbservice.service */
+    "./src/app/services/my-dbservice.service.ts");
 
     var RandomDirective = /*#__PURE__*/function () {
-      function RandomDirective(elRef) {
+      function RandomDirective(elRef, wordsSV) {
         _classCallCheck(this, RandomDirective);
 
         this.elRef = elRef;
+        this.wordsSV = wordsSV;
         this.sum = 0;
+        this.HebWords = [];
+        this.englishWords = [];
         this.wordHeb = '';
+        this.getHebWords = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
+        this.getenglishWords = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
         this.getWord = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
         this.getRandInit = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
         this.getRand = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
@@ -778,7 +823,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         key: "rand",
         value: function rand() {
           for (var i = 0; i < this.randArr.length; i++) {
-            var rand = Math.floor(Math.random() * Math.floor(this.arrLange));
+            var rand = Math.floor(Math.random() * Math.floor(40));
             this.randArr[i] = rand;
           }
 
@@ -788,8 +833,22 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "ngOnInit",
         value: function ngOnInit() {
-          this.rand();
-          this.getRandInit.emit(this.randArr);
+          var _this = this;
+
+          console.log("init");
+          this.wordsSV.httpGet(this.wordsSV.urlsJeson.jsonA).subscribe(function (strResult) {
+            _this.HebWords = strResult['coloros']['HebWords'];
+            _this.englishWords = strResult['coloros']['englishWords'];
+            console.log(_this.englishWords);
+
+            _this.getHebWords.emit(_this.HebWords);
+
+            _this.getenglishWords.emit(_this.englishWords);
+
+            _this.rand();
+
+            _this.getRandInit.emit(_this.randArr);
+          });
         }
       }]);
 
@@ -797,7 +856,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     }();
 
     RandomDirective.ɵfac = function RandomDirective_Factory(t) {
-      return new (t || RandomDirective)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"]));
+      return new (t || RandomDirective)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_services_my_dbservice_service__WEBPACK_IMPORTED_MODULE_1__["MyDBserviceService"]));
     };
 
     RandomDirective.ɵdir = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineDirective"]({
@@ -811,10 +870,14 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         }
       },
       inputs: {
+        HebWords: "HebWords",
+        englishWords: "englishWords",
         wordHeb: "wordHeb",
         arrLange: "arrLange"
       },
       outputs: {
+        getHebWords: "getHebWords",
+        getenglishWords: "getenglishWords",
         getWord: "getWord",
         getRandInit: "getRandInit",
         getRand: "getRand"
@@ -831,13 +894,27 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }], function () {
         return [{
           type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"]
+        }, {
+          type: _services_my_dbservice_service__WEBPACK_IMPORTED_MODULE_1__["MyDBserviceService"]
         }];
       }, {
+        HebWords: [{
+          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }],
+        englishWords: [{
+          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }],
         wordHeb: [{
           type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
         }],
         arrLange: [{
           type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }],
+        getHebWords: [{
+          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"]
+        }],
+        getenglishWords: [{
+          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"]
         }],
         getWord: [{
           type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"]
@@ -853,6 +930,88 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           args: ['click']
         }]
       });
+    })();
+    /***/
+
+  },
+
+  /***/
+  "./src/app/services/my-dbservice.service.ts":
+  /*!**************************************************!*\
+    !*** ./src/app/services/my-dbservice.service.ts ***!
+    \**************************************************/
+
+  /*! exports provided: MyDBserviceService */
+
+  /***/
+  function srcAppServicesMyDbserviceServiceTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "MyDBserviceService", function () {
+      return MyDBserviceService;
+    });
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! @angular/core */
+    "../node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/common/http */
+    "../node_modules/@angular/common/__ivy_ngcc__/fesm2015/http.js");
+
+    var MyDBserviceService = /*#__PURE__*/function () {
+      function MyDBserviceService(myHttp) {
+        _classCallCheck(this, MyDBserviceService);
+
+        this.myHttp = myHttp;
+        this.urlsJeson = {
+          jsonA: "https://raw.githubusercontent.com/didi3762/ajax/master/ajax4.json"
+        };
+        this.HebWords = [];
+        this.englishWords = [];
+        this.API_KEY = 'a0e86e494bmsh4d89c361a8749e8p1e76acjsnc912453b36d7';
+      }
+
+      _createClass(MyDBserviceService, [{
+        key: "httpGet",
+        value: function httpGet(url) {
+          return this.myHttp.get(url);
+        }
+      }]);
+
+      return MyDBserviceService;
+    }();
+
+    MyDBserviceService.ɵfac = function MyDBserviceService_Factory(t) {
+      return new (t || MyDBserviceService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]));
+    };
+
+    MyDBserviceService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({
+      token: MyDBserviceService,
+      factory: MyDBserviceService.ɵfac,
+      providedIn: 'root'
+    });
+    /*@__PURE__*/
+
+    (function () {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](MyDBserviceService, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"],
+        args: [{
+          providedIn: 'root'
+        }]
+      }], function () {
+        return [{
+          type: _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]
+        }];
+      }, null);
     })();
     /***/
 

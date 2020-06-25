@@ -33,7 +33,7 @@ export class RandomDirective implements OnInit{
 
   rand(){
     for (let i = 0; i < this.randArr.length; i++) {
-      let rand = Math.floor(Math.random() * Math.floor(10));
+      let rand = Math.floor(Math.random() * Math.floor(40));
       this.randArr[i]= rand;
     }
     let rand4 = Math.floor(Math.random() * Math.floor(4));
@@ -67,4 +67,7 @@ export class RandomDirective implements OnInit{
 
 
 }
+
+
+// ng build --output-path docs --base-href https://bresleveloper.github.io/techingAvratech7NG/
 
