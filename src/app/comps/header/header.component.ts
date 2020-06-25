@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { MyDBserviceService } from 'src/app/services/my-dbservice.service';
 
 @Component({
   selector: 'header',
@@ -7,16 +8,16 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  @Input() wordEng:string = "ssss"
+  @Input() wordEng:string = ""
+  
 
-  constructor() { }
+  constructor(private wordsSV:MyDBserviceService) {
+     
+   }
 
   ngOnInit(): void {
   }
 
-  wordsArr = [
-    "אדום", "פרח","שמש","ירח","שבוע","צבע","שמיים","יין","לחם","יום"
-  ]
 
  
 

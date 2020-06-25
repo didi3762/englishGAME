@@ -1,7 +1,7 @@
 <div class="home">
-    <header Random [arrLange]='englishWords.length' (getRandInit)="addRand($event)" (getRand)="addRand($event)"  [wordEng]="wordEngM" ></header>
+    <header Random (getenglishWords)="englishWords = $event" (getHebWords)="HebWords = $event" (getRandInit)="addRand($event)"  [wordEng]="wordEngM" ></header>
     <div class="board">
-        <board Random [arrLange]='englishWords.length' (getRand)="addRand($event)"  (getWord)="word = $event"  *ngFor='let x of wordsArr' [wordHeb]='x' ></board>
+        <board Random  (getRand)="addRand($event)"  (getWord)="word = $event"  *ngFor='let x of wordsArr' [wordHeb]='x' ></board>
     </div>
     <result Random [resTex]=resTexM></result>
 </div>

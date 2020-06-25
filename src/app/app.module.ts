@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { HttpClientModule} from '@angular/common/http'
+
 import { AppComponent } from './app.component';
 import { ResultComponent } from './comps/result/result.component';
 import { BoardComponent } from './comps/board/board.component';
@@ -18,7 +20,7 @@ import { RandomDirective } from './directives/random.directive';
     RandomDirective
   ],
   imports: [
-    BrowserModule
+    BrowserModule, HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

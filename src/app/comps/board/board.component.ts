@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { MyDBserviceService } from 'src/app/services/my-dbservice.service';
 
 @Component({
   selector: 'board',
@@ -11,13 +12,12 @@ export class BoardComponent implements OnInit {
   @Input() wordRand:string = ''
   @Input() arrLange:number 
 
-  constructor() { }
+  constructor(public wordsSVC:MyDBserviceService) { 
+   
+  }
 
   ngOnInit(): void {
   }
 
-  englishWords = [
-    'red','day','sky','week','flower', 'sun', 'moon', 'bread', 'color', 'wine'
-  ]
 
 }

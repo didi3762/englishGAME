@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { MyDBserviceService } from 'src/app/services/my-dbservice.service';
 
 @Component({
   selector: 'mainboard',
@@ -9,36 +10,35 @@ export class MainboardComponent implements OnInit {
 
   word:string = ''
   wordEngM:string = ''
-  resTexM:string = 'sss'
+  resTexM:string = '0'
   sum:number = 0
+  HebWords:string[] = []
+  englishWords:string[] = []
+  @Input() rand:number[]= []
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
 
-  wordsArr:string[] = [ '','','','' ]
+  wordsArr:string[] = [ '','','','' ];
 
-  HebWords = [
-    "אדום", "יום","שמיים","שבוע","פרח","שמש","ירח","לחם","צבע", "יין"
-  ]
 
-  englishWords = [
-    'red','day','sky','week','flower', 'sun', 'moon', 'bread', 'color', 'wine'
-  ]
+  
 
   addRand(event){
     let HebIndex = this.HebWords.indexOf(this.word)
     let engIndex = this.englishWords.indexOf(this.wordEngM)
-    if(this.wordEngM==''){
+    if(this.wordEngM==''||this.wordEngM==null){
+      console.log(this.sum);
       this.sum = 0
     }
     else if(HebIndex == engIndex){
         this.sum++
+        console.log(this.sum);
     }else{
+      console.log(this.sum);
       this.sum--
     }
-    console.log(event,this.wordsArr,this.wordEngM , this.word, HebIndex ,engIndex);
     this.wordEngM = this.englishWords[event[0]]
     this.wordsArr[0] = this.HebWords[event[1]];
     this.wordsArr[1] = this.HebWords[event[2]];
@@ -46,9 +46,8 @@ export class MainboardComponent implements OnInit {
     this.wordsArr[3] = this.HebWords[event[4]];
     this.wordsArr[event[5]] = this.HebWords[event[0]]
     this.resTexM = this.sum.toString()
-  
-   
-  }
+
+ }
 
 
 

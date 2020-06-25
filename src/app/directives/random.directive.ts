@@ -1,17 +1,25 @@
-import { Directive, ElementRef, HostListener, Output, EventEmitter, Input, OnInit } from '@angular/core';
+import { Directive, ElementRef, HostListener, Output, EventEmitter, Input, OnInit, AfterViewChecked } from '@angular/core';
+import { MyDBserviceService } from '../services/my-dbservice.service';
 
 @Directive({
   selector: '[Random]'
 })
-export class RandomDirective implements OnInit {
+export class RandomDirective implements OnInit{
 
   el:HTMLElement;
   sum:number = 0;
+  @Input() HebWords:string[] = []
+  @Input() englishWords:string[] = []
+
   @Input() wordHeb:string = ''
   @Input() arrLange:number
+
+  @Output() getHebWords = new EventEmitter<string[]>()
+  @Output() getenglishWords = new EventEmitter<string[]>()
   @Output() getWord = new EventEmitter<string>()
   @Output() getRandInit = new EventEmitter<number[]>()
   @Output() getRand = new EventEmitter<number[]>()
+  
   @HostListener('click')    rnd() {
     console.log('clicked');
        
@@ -25,7 +33,7 @@ export class RandomDirective implements OnInit {
 
   rand(){
     for (let i = 0; i < this.randArr.length; i++) {
-      let rand = Math.floor(Math.random() * Math.floor(this.arrLange));
+      let rand = Math.floor(Math.random() * Math.floor(10));
       this.randArr[i]= rand;
     }
     let rand4 = Math.floor(Math.random() * Math.floor(4));
@@ -33,19 +41,30 @@ export class RandomDirective implements OnInit {
  }
 
 
-  constructor(private elRef:ElementRef) { 
+  constructor(private elRef:ElementRef,private wordsSV:MyDBserviceService) { 
     this.el = elRef.nativeElement;
-    
-    
   }
+ 
+ 
   ngOnInit(): void {
-    
-      this.rand()
-    
-    this.getRandInit.emit(this.randArr)
-   
-  }
+      console.log("init");
 
+      this.wordsSV.httpGet(this.wordsSV.urlsJeson.jsonA)
+      .subscribe(strResult => {
+        this.HebWords = strResult['coloros']['HebWords']
+        this.englishWords = strResult['coloros']['englishWords']
+        console.log(this.englishWords);
+
+   
+
+    this.getHebWords.emit(this.HebWords)
+    this.getenglishWords.emit(this.englishWords)
+    this.rand()
+    this.getRandInit.emit(this.randArr)
+    
+       })
+}
 
 
 }
+
